@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.bloc_page{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    height: 206px;
+    background-color: #ff7c18;
+    position: absolute;
+    top: -2%;
+    left: -172%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 1.5s ease;
+}
+
+.header_menu input {
+    display: none;
+}
+
+.header_menu label {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #ff7c18;
+    display: grid;
+    place-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+span,
+span::before,
+span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+span::before,
+span::after {
+    position: absolute;
+    content: "";
+}
+
+span::before {
+    bottom: 10px;
+}
+
+span::after {
+    top: 10px;
+}
+
+.header_menu input:checked~ul {
+    left: 0;
+}
+
+.header_menu input:checked~label span {
+    transform: rotate(45deg);
+}
+
+.header_menu input:checked~label span::before {
+    display: none;
+}
+
+.header_menu input:checked~label span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header img{
+    width: 30%;
+}
+
+.nav h4{
+    visibility: hidden;
+}
+
+.fond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/Fond.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 300px;
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    width: 95%;
+    align-self: center;
+    flex-direction: column;
+}
+.contact input{
+    width: 100%;
+    height: 30px;
+    border:1px solid #FA4A0C;
+    margin:10px 0 10px 0;
+}
+.rens{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+}
+
+.commande{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 95%;
+    justify-content: space-between;
+}
+.commande h4{
+    align-self: center;
+    color: #FA4A0C
+}
+.commande h3{
+    text-decoration: underline;
+}
+
+.supp{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+}
+
+.suppinfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.suppi{
+    width: 100%;
+}
+.suppi input{
+    width:95%;
+    margin:10px 0 10px 0;
+}
+
+.suppq input{
+    width: 50%;
+    margin:10px 0 10px 0;
+}
+
+.titre{
+    text-align: center;
+}
+
+.frite{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 70%;
+}
+ .frite input{
+     align-self: center;
+ }
+ .frite label{
+     align-self: center;
+ }
+.boides{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+ .boissons{
+     text-align: center;
+     display: grid;
+     grid-template-columns: 20% 50% 30%;
+     grid-template-rows: 1fr 1fr 1fr;
+     width: 45%;
+ }
+
+ .choix{
+     display: flex;
+     width: 95%;
+     justify-content: space-between;
+ }
+
+.bq{
+    height: 40%;
+    margin-top: 30%;
+}
+
+button{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 50%;
+    height: 80%;
+    background-color: #FA4A0C;
+    color: white;
+}
+
+.reseaux img{
+    margin: 3px;
+    width: 30px;
+    height: 40%;
+}
+
+.bas_page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 30%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fond2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(./Images/Fond\ foot.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.boissons input{
+    -webkit-appearance: none;
+    border: 1px solid black;
+    height: 20px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.boissons input[type="checkbox"]:checked{
+    background-color: green;
+}
+
+.frite input{
+    -webkit-appearance: none;
+    border:1px solid blue;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+}
+.frite input:checked{
+   background-image: url(./Images/active.png);
+   background-position-x: center;
+   background-position-y: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+
+@media (min-width:1007px){
+    .nav h4{
+        visibility:visible;
+        text-align: end;
+        width: 98%;
+        color: #ff7c18;
+    }
+
+    a{
+        color:#ff7c18
+    }
+    .header_menu{
+        display: none;
+    }
+    .contact{
+        display: grid;
+        gap:2%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header img{
+        width: 20%;
+    }
+    .rens{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .commande{
+        justify-content: space-around;
+    }
+    .ok{
+        width: 100%;
+    }
+    .boissons{
+        grid-template-columns: 10% 40% 50%;
+        border: none;
+    }
+    .bq{
+        width: 100%;;
+    }
+    .boides{
+        width: 60%;
+        justify-content: space-between;
+    }
+    button{
+        height: 30px;
+        align-self:flex-end;
+        justify-self: end;
+    }
+    footer{
+        margin-top: 70px;
+    }
+
+    footer img{
+        width: 10%;
+    }
+
+}

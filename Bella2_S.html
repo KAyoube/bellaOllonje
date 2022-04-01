@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./Bella2_css.css">
+    <title>Commande</title>
+</head>
+
+<body>
+    <div class="bloc_page">
+        <nav class="nav">
+            <div class="header_menu">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="./Bella.html">Accueil</a></li>
+                    <li><a href="#Pizza">Pizzas</a></li>
+                    <li><a href="#Burger">Burgers</a></li>
+                    <li><a href="#Salade">Salades</a></li>
+                    <li><a href="./Bella3.html">Contact</a></li>
+                </ul>
+            </div>
+            <h4 class="Home">
+                <a href="./Bella.html">Accueil</a>
+                <a href="./Bella.html#Pizza">Pizzas</a>
+                <a href="./Bella.html#Burger">Burgers</a>
+                <a href="./Bella.html#Salade">Salades</a>
+                <a href="./Bella3.html">Contact</a>
+            </h4>
+        </nav>
+        <header>
+            <img alt="Logo" src="Images/Logo.png">
+            <h1 class="fond">Chez Bella,<br>chaque désir <br>s'additionne.</h1>
+        </header>
+        <h1 id="Prise" class="titre">Vos Informations</h1>
+        <form class="contact">
+            <div class="rens">
+                <Label>Nom:</label>
+                <input type="text" placeholder="Nom">
+            </div>
+            <div class="rens">
+                <Label>Prénom:</Label>
+                <input type="text" placeholder="Prénom">
+            </div>
+            <div class="rens">
+                <Label>Téléphone:</Label>
+                <input type="tel" placeholder="00.00.00.00.00">
+            </div>
+            <div class="rens">
+                <Label>E-mail:</Label>
+                <input type="email" placeholder="Bella-Olonje@afpa.fr">
+            </div>
+        </form>
+        <div class="commande">
+            <h1>Votre commande:</h1>
+            <h4>Salade d'avocat</h4>
+        </div>
+        <h3 class="titre">Supplements:</h3>
+
+        <form class="supp">
+            <div class="suppinfo">
+                <Label class="suppi">Ingrédient 1:<input type="text" placeholder="Fromage"></Label>
+                <Label class="suppq">Quantités<br><input type="number" placeholder="0"></Label>
+            </div>
+            <div class="suppinfo">
+                <Label class="suppi">Ingrédient 2:<br> <input type="text" placeholder="Fromage"></Label>
+                <Label class="suppq">Quantités<br><input type="number" placeholder="0"></Label>
+            </div>
+            <div class="suppinfo">
+                <Label class="suppi">Ingrédient 3:<br> <input type="text" placeholder="Fromage"></Label>
+                <Label class="suppq">Quantités<br><input type="number" placeholder="0"></Label>
+            </div>
+            <div class="suppinfo">
+                <Label class="suppi">Ingrédient 4:<br> <input type="text" placeholder="Fromage"></Label>
+                <Label class="suppq">Quantités<br><input type="number" placeholder="0"></Label>
+            </div>
+            <div class="frite">
+                <h4>Frites:</h4>
+                <label>Avec <input type="radio" name="valide" ></label>
+                <label>Sans<input type="radio" name="valide"></label>
+            </div>
+            <div class="boides">
+                <h2>Boissons:</h2>
+                <h2>Desserts:</h2>
+            </div>
+            <div class="choix">
+                <div class="boissons">
+                    <input class="ok" type="checkbox">
+                    <p>Coca-Cola</p>
+                    <input class="bq" type="number">
+                    <input class="ok" type="checkbox">
+                    <p>Fanta</p>
+                    <input class="bq" type="number">
+                    <input class="ok" type="checkbox">
+                    <p>Eau</p>
+                    <input class="bq" type="number">
+                </div>
+                <div class="boissons">
+                    <input class="ok" type="checkbox">
+                    <p>Tiramisu</p>
+                    <input class="bq" type="number">
+                    <input class="ok" type="checkbox">
+                    <p>Cheescake</p>
+                    <input class="bq" type="number">
+                    <input class="ok" type="checkbox">
+                    <p>Muffin</p>
+                    <input class="bq" type="number">
+                </div>
+            </div>
+        </form>
+        <h1 class="titre">Adresse de Livraison</h1>
+        <form class="contact">
+            <div class="rens">
+                <Label>Nom:</label>
+                    <input type="text" placeholder="Nom">
+            </div>
+            <div class="rens">
+                <Label>Prénom:</Label>
+                <input type="text" placeholder="Prénom">
+            </div>
+            <div class="rens">
+                <Label>Adresse:</Label>
+                <input type="text" placeholder="Adresse">
+            </div>
+            <div class="rens">
+                <Label>Code postal:</Label>
+                <input type="text" placeholder="94000">
+            </div>
+            <div class="rens">
+                <Label>Code postal:</Label>
+                <input type="text" placeholder="94000">
+            </div>
+            <div class="rens">
+                <Label>Pays:</Label>
+                <input type="text" placeholder="France">
+            </div>
+            <div class="rens">
+                <Label>Ville:</Label>
+                <input type="text" placeholder=Créteil>
+            </div>
+            <div class="rens">
+                <Label>Télephone:</Label>
+                <input type="text" placeholder="00.00.00.00.00">
+            </div>
+            <div class="rens">
+                <Label>E-mail:</Label>
+                <input type="text" placeholder="DWWM@afpa.com">
+            </div>
+            <button>Envoyer</button>
+        </form>
+        
+        <footer>
+            <h2 class="fond2">Bon Appetit</h2>
+            <div class="bas_page">
+                <img alt="Logo" src="Images/Logo.png">
+                <div class="reseaux">
+                    <img alt="fb" src="Images/fb.png">
+                    <img alt="twi" src="Images/twi.png">
+                    <img alt="insta" src="Images/instagram.png">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
